@@ -1,0 +1,24 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Vinoth's profile page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinothK1447/profile.git"
+  },
+  "keywords": [
+    "Profile",
+    "resume",
+    "cv"
+  ],
+  "author": "Vinothkumar Krishnamoorthy <vinothkarur@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinothK1447/profile/issues"
+  },
+  "homepage": "https://github.com/VinothK1447/profile#readme"
+}
