@@ -1,3 +1,6 @@
+@base-color: #4d687b;
+@color: #fff;
+@gray-border: #ddd;
 body {
 	font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
 	padding: 0;
@@ -15,40 +18,46 @@ body {
 
 	details {
 		width: 100%;
-		overflow:hidden;
-		border-bottom:1px solid rgba(black, 0.1);
+		overflow: hidden;
+		border-bottom: 1px solid rgba(black, 0.1);
 
-		&:last-of-type{border-bottom:none}
-		.roles-list, .awards-list, .info-list {
+		&:last-of-type {
+			border-bottom: none;
+		}
+		.roles-list,
+		.awards-list,
+		.info-list {
 			li {
-				padding: .5rem;
+				padding: 0.5rem;
 				font-weight: 100;
 
 				span i {
-					color: #0074bd;
+					color: @base-color;
 				}
 			}
 		}
-		a, a:hover, a:visited {
-			color: #0074bd;
+		a,
+		a:hover,
+		a:visited {
+			color: @base-color;
 			text-decoration: none;
 		}
 
 		summary {
-			display:block;
+			display: block;
 			user-select: none;
-			outline:none;
-			padding:1rem;
-			margin-bottom:0px;
+			outline: none;
+			padding: 1rem;
+			margin-bottom: 0px;
 			margin-top: 10px;
 			transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
 			transition-property: margin, background;
-			font-weight:600;
-			border-bottom:1px solid rgba(black, 0.1);
-			background:#0074bd;
-			color: #fff;
+			font-weight: 600;
+			border-bottom: 1px solid rgba(black, 0.1);
+			background: @base-color;
+			color: @color;
+			font-family: 'Staatliches';
 			border-radius: 6px;
-			font-family: 'Oleo Script Swash Caps', cursive;
 			font-size: 1.3rem;
 			letter-spacing: 2px;
 
@@ -57,27 +66,33 @@ body {
 				font-size: 1.275rem;
 			}
 
-			&:last-of-type{border-bottom:none}
+			&:last-of-type {
+				border-bottom: none;
+			}
 
-			&::-webkit-details-marker { display:none }
-			&::-webkit-details-marker { display:none }
+			&::-webkit-details-marker {
+				display: none;
+			}
+			&::-webkit-details-marker {
+				display: none;
+			}
 
 			&:before {
 				font: normal normal normal 1em/1 FontAwesome;
 				font-weight: 900;
-				content:'';
-				margin-right:0.5em;
+				content: '';
+				margin-right: 0.5em;
 			}
 
 			&:hover {
-				cursor:pointer;
+				cursor: pointer;
 			}
 		}
 		&[open] {
 			summary {
 				margin-bottom: 1rem;
 				padding-bottom: 1rem;
-				border-bottom:1px solid rgba(black, 0.1);
+				border-bottom: 1px solid rgba(black, 0.1);
 			}
 		}
 	}
@@ -85,9 +100,9 @@ body {
 		flex: 0 0 100%;
 		&-head {
 			display: flex;
-			flex-basis: calc(100%/2);
-			background: #0074bd;
-			color: #fff;
+			flex-basis: calc(100% / 2);
+			background: @base-color;
+			color: @color;
 			padding: 0 1rem;
 
 			@media screen and (max-width: 768px) {
@@ -107,8 +122,8 @@ body {
 			}
 
 			&-namerole {
-				color: #fff;
-				font-family: 'Oleo Script Swash Caps', cursive;
+				color: @color;
+				font-family: 'Staatliches';
 				letter-spacing: 2px;
 				.name {
 					font-weight: 900;
@@ -128,16 +143,19 @@ body {
 			flex-flow: row wrap;
 			justify-content: space-evenly;
 			align-items: center;
-			background: #0074bd;
-			color: #fff;
+			background: @base-color;
+			color: @color;
 			@media screen and (max-width: 768px) {
 				flex-flow: column nowrap;
 			}
 			div {
 				padding: 1rem 2rem 1rem 0;
 
-				i, a, a:hover, a:visited {
-					color: #fff;
+				i,
+				a,
+				a:hover,
+				a:visited {
+					color: @color;
 				}
 				i {
 					margin-right: 1rem;
@@ -154,7 +172,7 @@ body {
 
 		&-main {
 			display: flex;
-			flex-basis: calc(100%/2);
+			flex-basis: calc(100% / 2);
 
 			@media screen and (max-width: 768px) {
 				flex-flow: column wrap;
@@ -162,6 +180,40 @@ body {
 			}
 
 			&-left {
+				flex: 0 0 25%;
+
+				.cloud {
+					border-bottom: 1px dashed @gray-border;
+					padding-left: 0.5rem;
+				}
+				.pill {
+					display: inline-block;
+					padding: 0.3rem;
+					margin: 0.275rem;
+					color: @color;
+					border-radius: 10px;
+
+					&.primary {
+						background: @base-color;
+						&:hover {
+							box-shadow: 4px 4px 4px @base-color;
+							transform: scale(1.1);
+						}
+					}
+					&.tertiary {
+						background: @gray-border;
+						color: #333;
+						&:hover {
+							box-shadow: 4px 4px 4px #333;
+							transform: scale(1.1);
+						}
+					}
+				}
+				details {
+					width: 99%;
+				}
+			}
+			&-right {
 				flex: 0 0 75%;
 				.work {
 					&-history {
@@ -171,22 +223,23 @@ body {
 						margin-left: 1rem;
 						&-row {
 							display: flex;
-							flex-basis: calc(100%/3);
+							flex-basis: calc(100% / 3);
 							align-items: center;
 							justify-content: space-between;
 							padding: 0.5rem;
-							border-bottom: 1px dashed #ddd;
+							border-bottom: 1px dashed @gray-border;
 							.company {
 								font-size: 1.25rem;
 							}
-							.role, .duration {
+							.role,
+							.duration {
 								font-size: 1rem;
 								font-style: italic;
 								white-space: nowrap;
 							}
 							.role {
 								margin-left: 1rem;
-								@media screen and (max-width: 768px){
+								@media screen and (max-width: 768px) {
 									margin-left: 0;
 								}
 							}
@@ -194,32 +247,6 @@ body {
 								margin: 0 1rem;
 							}
 						}
-					}
-				}
-				details {
-					width: 99%;
-				}
-			}
-			&-right {
-				flex: 0 0 25%;
-
-				.cloud {
-					border-bottom: 1px dashed #ddd;
-					padding-left: .5rem;
-				}
-				.pill {
-					display: inline-block;
-					padding: .3rem;
-					margin: .275rem;
-					color: #fff;
-					border-radius: 10px;
-
-					&.primary {
-						background:#0074bd;
-					}
-					&.tertiary {
-						background:#ddd;
-						color: #0074bd;
 					}
 				}
 				details {
