@@ -7,16 +7,22 @@
 		<link rel="icon" id="favIcon" href="./favicon.ico" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap"
+			rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
+			referrerpolicy="no-referrer" />
 		<link rel="stylesheet/less" type="text/css" href="index.less" />
 		<script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+		<script src="./tingle.min.js"></script>
+		<script type="module">
+			import openContentModal from './workdetails.mjs'
+			window.openContentModal = openContentModal 
+		</script>
 		<title>Vinothkumar K - Profile</title>
 	</head>
 	<body>
@@ -26,170 +32,348 @@
 					<div class="content-head-img"></div>
 					<div class="content-head-namerole">
 						<div class="name">Vinothkumar Krishnamoorthy</div>
-						<div class="role">Technical Architect @ Tata Consultancy Services</div>
+						<div class="role">
+							Technical Architect @ Tata Consultancy Services
+						</div>
 					</div>
 				</div>
 				<div class="content-contact">
-					<div><i class="fa-solid fa-location-dot"></i> Bangalore, India, 560102</div>
-					<div><i class="fa-solid fa-envelope"></i> <a href="mailto:vinothkarur@gmail.com">vinothkarur@gmail.com</a></div>
-					<div><i class="fa-solid fa-mobile-retro"></i> +91-9740933111</div>
-					<div><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/vinoth-kumar-krishnamoorthy/" target="_blank">Linkedin profile</a></div>
+					<div>
+						<i class="fa-solid fa-location-dot"></i> Bangalore,
+						India, 560102
+					</div>
+					<div>
+						<i class="fa-solid fa-envelope"></i>
+						<a href="mailto:vinothkarur@gmail.com"
+							>vinothkarur@gmail.com</a
+						>
+					</div>
+					<div>
+						<i class="fa-solid fa-mobile-retro"></i> +91-9740933111
+					</div>
+					<div>
+						<i class="fa-brands fa-linkedin"></i>
+						<a
+							href="https://www.linkedin.com/in/vinoth-kumar-krishnamoorthy/"
+							target="_blank"
+							>Linkedin profile</a
+						>
+					</div>
 				</div>
 				<div class="content-description">
-					Passionate and goal-driven professional with 18+ years of experience, adept at reviewing plans and implementing improvements. Highly skilled in technical
-					research and expert in UI/front-end design and development. Always ready for new professional challenges and willing to take on dynamic responsibilities.
+					Passionate and goal-driven professional with 19+ years of
+					experience, adept at reviewing plans and implementing
+					improvements. Highly skilled in technical research and
+					expert in UI/front-end design and development. Always ready
+					for new professional challenges and willing to take on
+					dynamic responsibilities.
 				</div>
 				<div class="content-main">
 					<div class="content-main-right">
 						<details open>
-							<summary><i class="fa-solid fa-person-digging"></i> Work history</summary>
+							<summary>
+								<i class="fa-solid fa-person-digging"></i> Work
+								history
+							</summary>
 							<ul class="fa-ul work-list">
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Tata Consultancy Services</span>
-											<span class="role">Technical Architect</span>
+											<span class="company"
+												>Tata Consultancy Services</span
+											>
+											<span class="role"
+												>Technical Architect</span
+											>
+											<span class="details" onClick="window.openContentModal('tcs')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Nov 2022 - Present</div>
+										<div class="duration">
+											Nov 2022 - Present
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Envestnet Yodlee</span>
-											<span class="role">Principal Engineer</span>
+											<span class="company"
+												>Envestnet Yodlee</span
+											>
+											<span class="role"
+												>Principal Engineer</span
+											>
+											<span class="details" onClick="window.openContentModal('yodlee')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Jun 2020 - Nov 2022</div>
+										<div class="duration">
+											Jun 2020 - Nov 2022
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Adobe Inc.</span>
-											<span class="role">Senior Frontend Engineer</span>
+											<span class="company"
+												>Adobe Inc.</span
+											>
+											<span class="role"
+												>Senior Frontend Engineer</span
+											>
+											<span class="details" onClick="window.openContentModal('adobe')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Oct 2011 - Jun 2020</div>
+										<div class="duration">
+											Oct 2011 - Jun 2020
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Symphony Services</span>
-											<span class="role">Technical Lead</span>
+											<span class="company"
+												>Symphony Services</span
+											>
+											<span class="role"
+												>Technical Lead</span
+											>
+											<span class="details" onClick="window.openContentModal('symphony')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Apr 2010 - Oct 2011</div>
+										<div class="duration">
+											Apr 2010 - Oct 2011
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Sonata Software Limited</span>
+											<span class="company"
+												>Sonata Software Limited</span
+											>
 											<span class="role">Consultant</span>
+											<span class="details" onClick="window.openContentModal('sonata')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Jan 2008 - Mar 2010</div>
+										<div class="duration">
+											Jan 2008 - Mar 2010
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">IBM India Private Limited</span>
-											<span class="role">Senior Software Engineer</span>
+											<span class="company"
+												>IBM India Private Limited</span
+											>
+											<span class="role"
+												>Senior Software Engineer</span
+											>
+											<span class="details" onClick="window.openContentModal('ibm')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Sep 2006 - Dec 2007</div>
+										<div class="duration">
+											Sep 2006 - Dec 2007
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Syntel Limited</span>
-											<span class="role">Analyst Programmer</span>
+											<span class="company"
+												>Syntel Limited</span
+											>
+											<span class="role"
+												>Analyst Programmer</span
+											>
+											<span class="details" onClick="window.openContentModal('syntel')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Feb 2006 - Sep 2006</div>
+										<div class="duration">
+											Feb 2006 - Sep 2006
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="work-list-row">
 										<div>
-											<span class="company">Savant Technologies (P) Limited</span>
-											<span class="role">Software Engineer</span>
+											<span class="company"
+												>Savant Technologies (P)
+												Limited</span
+											>
+											<span class="role"
+												>Software Engineer</span
+											>
+											<span class="details" onClick="window.openContentModal('savant')">
+												<i
+													class="fa-solid fa-circle-play"></i
+											></span>
 										</div>
-										<div class="duration">Jun 2004 - Feb 2006</div>
+										<div class="duration">
+											Jun 2004 - Feb 2006
+										</div>
 									</div>
 								</li>
 							</ul>
 						</details>
 						<details open>
-							<summary><i class="fa-solid fa-sun"></i> Roles & responsibilities</summary>
+							<summary>
+								<i class="fa-solid fa-sun"></i> Roles &
+								responsibilities
+							</summary>
 							<ul class="fa-ul roles-list">
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Review plans, documents and related materials to assess projected actions and
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Review plans, documents and related
+									materials to assess projected actions and
 									advise on changes.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Applied development best practices in daily tasks for efficiency and
-									accuracy.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Applied development best practices in daily
+									tasks for efficiency and accuracy.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Trained team members and improved engineering application processes.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Trained team members and improved
+									engineering application processes.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Designed, prototyped and tested UI systems.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Designed, prototyped and tested UI systems.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Collaborated with stakeholders during development processes to confirm
-									creative proposals and design best practices.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Collaborated with stakeholders during
+									development processes to confirm creative
+									proposals and design best practices.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Improved tools to boost user interaction and deliver design versatility.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Improved tools to boost user interaction
+									and deliver design versatility.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Planned website development, converting mockups into usable web presence.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Planned website development, converting
+									mockups into usable web presence.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Use regulatory and compliance standards for user interface designs.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Use regulatory and compliance standards for
+									user interface designs.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Followed SDLC best practices within Agile environment to produce rapid
-									iterations for clients.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Followed SDLC best practices within Agile
+									environment to produce rapid iterations for
+									clients.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Communicate with product and UX teams to translate project requirements and
-									business objectives into polished user interfaces.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Communicate with product and UX teams to
+									translate project requirements and business
+									objectives into polished user interfaces.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Improved and expanded project platforms with cutting edge UI tools to develop
-									rich user interfaces.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-circle-check"></i></span
+									>Improved and expanded project platforms
+									with cutting edge UI tools to develop rich
+									user interfaces.
 								</li>
 							</ul>
 						</details>
 						<details open>
-							<summary><i class="fa-solid fa-medal"></i> Professional achievements</summary>
+							<summary>
+								<i class="fa-solid fa-medal"></i> Professional
+								achievements
+							</summary>
 							<ul class="fa-ul awards-list">
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Bravo Award from IBM India Private Limited for Project Renaissance.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Received Bravo Award from IBM India Private
+									Limited for Project Renaissance.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Project Excellence Award from American Express Bank for Project
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Received Project Excellence Award from
+									American Express Bank for Project
 									Renaissance.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Appreciate award for Technical Expertise from Adobe Inc.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Received Appreciate award for Technical
+									Expertise from Adobe Inc.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received several Bravo awards for Technical Expertise from Adobe Inc.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Received several Bravo awards for Technical
+									Expertise from Adobe Inc.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Hackathon runner at Adobe Inc.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Hackathon runner at Adobe Inc.
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Dream team winner at Envestnet Yodlee.
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-star-of-david"></i></span
+									>Dream team winner at Envestnet Yodlee.
 								</li>
 							</ul>
 						</details>
 					</div>
 					<div class="content-main-left">
 						<details open>
-							<summary><i class="fa-solid fa-toolbox"></i> Knowledge cloud</summary>
+							<summary>
+								<i class="fa-solid fa-toolbox"></i> Knowledge
+								cloud
+							</summary>
 							<div class="cloud">
 								<span class="pill primary">JavaScript</span>
 								<span class="pill primary">HTML 5</span>
@@ -198,8 +382,9 @@
 								<span class="pill primary">CSS 2/3</span>
 								<span class="pill tertiary">UI/UX Design</span>
 								<span class="pill primary">OOJS</span>
-								<span class="pill primary">VueJS</span>
-								<span class="pill tertiary">Typescript</span>
+								<span class="pill tertiary">VueJS</span>
+								<span class="pill primary">Typescript</span>
+								<span class="pill primary">HighCharts</span>
 								<span class="pill tertiary">Graph QL</span>
 								<span class="pill primary">REST API</span>
 								<span class="pill primary">LESS/SCSS</span>
@@ -214,45 +399,80 @@
 								<span class="pill tertiary">Mongo DB</span>
 								<span class="pill tertiary">Mongoose ODM</span>
 								<span class="pill primary">AJAX</span>
-								<span class="pill tertiary">Analytics (Omniture)</span>
+								<span class="pill tertiary"
+									>Analytics (Omniture)</span
+								>
 								<span class="pill primary">Jira</span>
 								<span class="pill tertiary">Can JS</span>
 								<span class="pill primary">Jest/Enzyme</span>
 								<span class="pill tertiary">AWS</span>
 								<span class="pill primary">Jasmine/Karma</span>
-								<span class="pill tertiary">Handlebars/Mustache/EJS</span>
-								<span class="pill primary">Agile Methodologies</span>
+								<span class="pill tertiary"
+									>Handlebars/Mustache/EJS</span
+								>
+								<span class="pill primary"
+									>Agile Methodologies</span
+								>
 								<span class="pill tertiary">AEM</span>
-								<span class="pill primary">Git/SVN/CVS/Perforce</span>
+								<span class="pill primary"
+									>Git/SVN/CVS/Perforce</span
+								>
 							</div>
 						</details>
 						<details open>
-							<summary><i class="fa-solid fa-circle-info"></i> Additional Info</summary>
+							<summary>
+								<i class="fa-solid fa-circle-info"></i>
+								Additional Info
+							</summary>
 							<ul class="fa-ul info-list">
 								<li>
-									<span class="fa-li"><i class="fa-brands fa-github"></i></span><a href="https://github.com/VinothK1447/" target="_blank">Github profile</a>
+									<span class="fa-li"
+										><i
+											class="fa-brands fa-github"></i></span
+									><a
+										href="https://github.com/VinothK1447/"
+										target="_blank"
+										>Github profile</a
+									>
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-link"></i></span><a href="https://vinothk1447.github.io/profile/" target="_blank">Personal profile</a>
+									<span class="fa-li"
+										><i class="fa-solid fa-link"></i></span
+									><a
+										href="https://vinothk1447.github.io/profile/"
+										target="_blank"
+										>Personal profile</a
+									>
 								</li>
 							</ul>
 						</details>
 						<details open>
-							<summary><i class="fa-solid fa-user-graduate"></i> Academics</summary>
+							<summary>
+								<i class="fa-solid fa-user-graduate"></i>
+								Academics
+							</summary>
 							<ul class="fa-ul awards-list">
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>MCA - RVS College of Engineering and Technology, Dindigul. Madurai Kamaraj
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-graduation-cap"></i></span
+									>MCA - RVS College of Engineering and
+									Technology, Dindigul. Madurai Kamaraj
 									University [2001- 2004]
 								</li>
 								<li>
-									<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.Sc [CS] - PSG College of Arts and Science, Coimbatore. Autonomous and
-									affiliated to Bharathiar University [1998 - 2001]
+									<span class="fa-li"
+										><i
+											class="fa-solid fa-graduation-cap"></i></span
+									>B.Sc [CS] - PSG College of Arts and
+									Science, Coimbatore. Autonomous and
+									affiliated to Bharathiar University [1998 -
+									2001]
 								</li>
 							</ul>
 						</details>
 					</div>
 				</div>
 			</div>
-		</div>
-	</body>
+		</body>
 </html>
