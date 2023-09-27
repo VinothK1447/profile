@@ -36,6 +36,11 @@ body {
 					color: @base-color;
 				}
 			}
+			@media print {
+				li.project-details {
+					display: none;
+				}
+			}
 		}
 		a,
 		a:hover,
@@ -265,6 +270,62 @@ body {
 			}
 			&-full {
 				flex: 0 0 100%;
+
+				.project-list {
+					&-item {
+						line-height: 2rem;
+						&-header {
+							display: flex;
+							flex-direction: row;
+							.name {
+								font-weight: 700;
+								font-size: 1.25rem;
+							}
+							.duration {
+								font-weight: 400;
+								font-size: 0.875rem;
+								font-style: italic;
+								margin-left: 2rem;
+							}
+							.associated-with {
+								margin-left: 2rem;
+								.aw-prefix {
+									font-weight: 600;
+									font-size: 0.875rem;
+								}
+								.aw-company {
+									font-weight: 600;
+									font-size: 1rem;
+									font-style: italic;
+								}
+							}
+
+							@media screen and (max-width: 48rem) {
+								flex-direction: column;
+								.duration,
+								.associated-with {
+									margin-left: 0;
+								}
+							}
+						}
+						&-sws-used {
+							.pill {
+								display: inline-block;
+								padding: 0 0.5rem;
+								margin: 0.275rem;
+								border-radius: 0.625rem;
+
+								&.tertiary {
+									background: @gray-border;
+									color: #333;
+								}
+							}
+						}
+						&-short-desc {
+							font-weight: 400;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -551,5 +612,11 @@ body {
 				padding: 1rem;
 			}
 		}
+	}
+}
+
+@media print {
+	.page-break-always {
+		page-break-after: always;
 	}
 }
