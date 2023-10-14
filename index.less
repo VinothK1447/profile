@@ -16,11 +16,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex: 0 0 100%;
+	
+	@media print { 
+		.nop {
+			display: none;
+		}
+	}
 
 	details {
 		width: 100%;
 		overflow: hidden;
-		border-bottom: 0.0625rem solid rgba(black, 0.1);
+		// border-bottom: 0.0625rem solid rgba(black, 0.1);
 
 		&:last-of-type {
 			border-bottom: none;
@@ -194,7 +200,7 @@ body {
 				flex: 0 0 25%;
 
 				.cloud {
-					border-bottom: 0.0625rem dashed @gray-border;
+					// border-bottom: 0.0625rem dashed @gray-border;
 					padding-left: 0.5rem;
 				}
 				.pill {
@@ -552,7 +558,7 @@ body {
 	&-roles-responsibility {
 		padding: 0.5rem 1rem;
 		&-header {
-			border-bottom: 1px dashed @base-color;
+			border-bottom: 0.0625rem dashed @base-color;
 			width: 100%;
 			padding: 0.25rem;
 		}
@@ -594,7 +600,7 @@ body {
 	&-skills-used {
 		padding: 0.5rem 1rem;
 		&-header {
-			border-bottom: 1px dashed @base-color;
+			border-bottom: 0.0625rem dashed @base-color;
 			width: 100%;
 			padding: 0.25rem;
 		}
@@ -615,4 +621,10 @@ body {
 	.page-break-always {
 		page-break-after: always;
 	}
+}
+
+.li-item {
+	border-bottom: 0.0625rem dashed @base-color;
+	margin-right: 2.5rem;
+	padding: 0.5rem 0;
 }
