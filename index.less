@@ -17,12 +17,6 @@ body {
 	align-items: center;
 	flex: 0 0 100%;
 	
-	@media print { 
-		.nop {
-			display: none;
-		}
-	}
-
 	details {
 		width: 100%;
 		overflow: hidden;
@@ -110,6 +104,11 @@ body {
 	}
 	.content {
 		flex: 0 0 100%;
+		@media print {
+			.nop {
+				display: none;
+			}
+		}		
 		&-head {
 			display: flex;
 			flex-basis: calc(100% / 2);
