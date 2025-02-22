@@ -16,7 +16,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex: 0 0 100%;
-	
+
 	details {
 		width: 100%;
 		overflow: hidden;
@@ -108,7 +108,7 @@ body {
 			.nop {
 				display: none;
 			}
-		}		
+		}
 		&-head {
 			display: flex;
 			flex-basis: calc(100% / 2);
@@ -180,7 +180,7 @@ body {
 		}
 		&-description {
 			font-size: 1rem;
-			letter-spacing: 0.0625rem;
+			// letter-spacing: 0.0625rem;
 			text-align: justify;
 			line-height: 1.5;
 			padding: 0.5rem 1rem;
@@ -361,10 +361,7 @@ body {
 	opacity: 0;
 	cursor: pointer;
 }
-@supports (
-	(-webkit-backdrop-filter: blur(0.3125rem)) or
-		(backdrop-filter: blur(0.3125rem))
-) {
+@supports ((-webkit-backdrop-filter: blur(0.3125rem)) or (backdrop-filter: blur(0.3125rem))) {
 	.tingle-modal {
 		-webkit-backdrop-filter: blur(0.3125rem);
 		backdrop-filter: blur(0.3125rem);
@@ -520,9 +517,8 @@ body {
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 1.6rem;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-			Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
-			'Helvetica Neue', sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+			'Droid Sans', 'Helvetica Neue', sans-serif;
 	}
 	.tingle-modal__closeIcon {
 		display: inline-block;
