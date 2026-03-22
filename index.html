@@ -1,338 +1,736 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vinothkumar Krishnamoorthy — Technical Architect</title>
+		<meta
+			name="description"
+			content="Technical Architect | UI Engineering Leader | React & Modern Frontend Specialist with 21+ years of experience."
+		/>
+		<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- ── NAV ── -->
+		<nav>
+			<a class="nav-logo" href="#home">
+				<img class="logo-dark-img" src="assets/logo-gradient.svg" alt="VK" />
+				<img class="logo-light-img" src="assets/logo-light.svg" alt="VK" />
+			</a>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#awards">Awards</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+				<svg
+					id="themeIcon"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					<path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+				</svg>
+			</button>
+		</nav>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" id="favIcon" href="./favicon.ico" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet/less" type="text/css" href="index.less" />
-	<script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-	<script src="./tingle.min.js"></script>
-	<script type="module">
-		import openContentModal from './workdetails.mjs'
-		window.openContentModal = openContentModal 
-	</script>
-	<title>Vinothkumar K - Profile</title>
-</head>
+		<!-- ── HERO ── -->
+		<section class="hero">
+			<div class="hero-bg"></div>
+			<div class="hero-grid"></div>
+			<div class="hero-content">
+				<div class="hero-badge">
+					<span class="hero-badge-dot"></span>
+					Available for Senior / Architect roles
+				</div>
+				<h1>
+					<span class="line1">Vinothkumar</span>
+					<span class="line2">Krishnamoorthy</span>
+				</h1>
+				<p class="hero-subtitle">
+					Technical Architect &nbsp;·&nbsp; UI Engineering Leader &nbsp;·&nbsp; React Specialist
+				</p>
+				<p class="hero-location">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+						<circle cx="12" cy="10" r="3" />
+					</svg>
+					Bengaluru, India
+				</p>
+				<div class="hero-cta">
+					<a href="mailto:vinothkarur@gmail.com" class="btn-primary">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+							<polyline points="22,6 12,13 2,6" />
+						</svg>
+						Get in touch
+					</a>
+					<a
+						href="https://www.linkedin.com/in/vinoth-kumar-krishnamoorthy"
+						target="_blank"
+						rel="noopener"
+						class="btn-secondary"
+					>
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+							<rect x="2" y="9" width="4" height="12" />
+							<circle cx="4" cy="4" r="2" />
+						</svg>
+						LinkedIn
+					</a>
+					<a href="https://github.com/VinothK1447/" target="_blank" rel="noopener" class="btn-secondary">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+							/>
+						</svg>
+						GitHub
+					</a>
+				</div>
 
-<body>
-	<div class="container">
-		<div class="content">
-			<div class="content-head">
-				<div class="content-head-img"></div>
-				<div class="content-head-namerole">
-					<div class="name">Vinothkumar Krishnamoorthy</div>
-					<div class="place">HSR Layout Sector 2, Bangalore - 560102, KA, India</div>
-					<div class="role">UI Architect / Front-end Architect</div>
+				<div class="stats-strip">
+					<div class="stat-item">
+						<div class="stat-value" data-target="21">0</div>
+						<div class="stat-label">Years of<br />UI Expertise</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-value">$1.8M</div>
+						<div class="stat-label">Annual savings<br />delivered</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-value">+30%</div>
+						<div class="stat-label">Customer satisfaction<br />improvement</div>
+					</div>
+					<div class="stat-item">
+						<div class="stat-value">+25%</div>
+						<div class="stat-label">User engagement<br />lift</div>
+					</div>
 				</div>
 			</div>
-			<div class="content-contact">
-				<div>
-					<i class="fa-solid fa-envelope"></i>
-					<a href="mailto:vinothkarur@gmail.com">vinothkarur@gmail.com</a>
+		</section>
+
+		<!-- ── ABOUT ── -->
+		<section id="about">
+			<div class="container">
+				<div class="fade-in">
+					<div class="section-label">About me</div>
+					<div class="divider"></div>
+					<h2 class="section-title">Bridging engineering<br />excellence &amp; business impact</h2>
 				</div>
-				<div>
-					<i class="fa-solid fa-mobile-retro"></i> +91-9740933111
-				</div>
-				<div>
-					<i class="fa-brands fa-linkedin"></i>
-					<a href="https://www.linkedin.com/in/vinoth-kumar-krishnamoorthy/" target="_blank">Linkedin profile</a>
-				</div>
-				<div>
-					<i class="fa-brands fa-github"></i>
-					<a href="https://github.com/VinothK1447/" target="_blank">Github profile</a>
-				</div>
-			</div>
-			<div class="content-description">
-				Adept at technical architecture design and fostering client engagement, I significantly enhanced software solutions as a technical architect. My leadership in UI development and team training led to innovative project executions and increased customer satisfaction. With a knack for communicating complex solutions, I consistently drive projects to success, leveraging both hard and soft skills.			
-			</div>
-			<div class="content-main">
-				<div class="content-main-right">
-					<details open>
-						<summary>
-							<i class="fa-solid fa-person-digging"></i> Professional Work
-							history
-						</summary>
-						<ul class="fa-ul work-list">
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Tata Consultancy Services</span>
-										<span class="role">Technical Architect</span>
-										<span class="details" onClick="window.openContentModal('tcs')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Nov 2022 - Present
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Envestnet Yodlee</span>
-										<span class="role">Principal Engineer</span>
-										<span class="details" onClick="window.openContentModal('yodlee')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Jun 2020 - Nov 2022
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Adobe Inc.</span>
-										<span class="role">Senior Frontend Engineer</span>
-										<span class="details" onClick="window.openContentModal('adobe')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Oct 2011 - Jun 2020
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Symphony Services</span>
-										<span class="role">Technical Lead</span>
-										<span class="details" onClick="window.openContentModal('symphony')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Apr 2010 - Oct 2011
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Sonata Software Limited</span>
-										<span class="role">Consultant</span>
-										<span class="details" onClick="window.openContentModal('sonata')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Jan 2008 - Mar 2010
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">IBM India Private Limited</span>
-										<span class="role">Senior Software Engineer</span>
-										<span class="details" onClick="window.openContentModal('ibm')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Sep 2006 - Dec 2007
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Syntel Limited</span>
-										<span class="role">Analyst Programmer</span>
-										<span class="details" onClick="window.openContentModal('syntel')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Feb 2006 - Sep 2006
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="work-list-row">
-									<div>
-										<span class="company">Savant Technologies (P)
-											Limited</span>
-										<span class="role">Software Engineer</span>
-										<span class="details" onClick="window.openContentModal('savant')">
-											<i class="fa-solid fa-circle-play"></i></span>
-									</div>
-									<div class="duration">
-										Jun 2004 - Feb 2006
-									</div>
-								</div>
-							</li>
-						</ul>
-					</details>
-					<details open>
-						<summary>
-							<i class="fa-solid fa-sun"></i> Roles &
-							responsibilities
-						</summary>
-						<ul class="fa-ul roles-list">
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Review plans, documents and related
-								materials to assess projected actions and
-								advise on changes.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Applied development best practices in daily
-								tasks for efficiency and accuracy.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Trained team members and improved
-								engineering application processes.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Designed, prototyped and tested UI systems.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Collaborated with stakeholders during
-								development processes to confirm creative
-								proposals and design best practices.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Improved tools to boost user interaction
-								and deliver design versatility.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Planned website development, converting
-								mockups into usable web presence.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Use regulatory and compliance standards for
-								user interface designs.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Followed SDLC best practices within Agile
-								environment to produce rapid iterations for
-								clients.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Communicate with product and UX teams to
-								translate project requirements and business
-								objectives into polished user interfaces.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-circle-check"></i></span>Improved and expanded project platforms
-								with cutting edge UI tools to develop rich
-								user interfaces.
-							</li>
-						</ul>
-					</details>
-					<details open>
-						<summary>
-							<i class="fa-solid fa-medal"></i> Professional
-							achievements
-						</summary>
-						<ul class="fa-ul awards-list">
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Bravo Award from IBM India Private
-								Limited for Project Renaissance.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Project Excellence Award from
-								American Express Bank for Project
-								Renaissance.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received Appreciate award for Technical
-								Expertise from Adobe Inc.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Received several Bravo awards for Technical
-								Expertise from Adobe Inc.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Hackathon runner at Adobe Inc.
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-star-of-david"></i></span>Dream team winner at Envestnet Yodlee.
-							</li>
-						</ul>
-					</details>
-				</div>
-				<div class="content-main-left">
-					<details open>
-						<summary>
-							<i class="fa-solid fa-toolbox"></i> Skills
-						</summary>
-						<div class="cloud">
-							<span class="pill tertiary">JavaScript</span>
-							<span class="pill tertiary">React JS</span>
-							<span class="pill tertiary">OOJS</span>
-							<span class="pill tertiary">ES 6</span>
-							<span class="pill tertiary">HTML 5</span>
-							<span class="pill tertiary">CSS 2/3</span>
-							<span class="pill tertiary">LESS/SCSS</span>
-							<span class="pill tertiary">Redux</span>
-							<span class="pill tertiary">UI/UX Design</span>
-							<span class="pill tertiary">Responsive UI</span>
-							<span class="pill tertiary">Typescript</span>
-							<span class="pill tertiary">Node JS</span>
-							<span class="pill tertiary">Webpack</span>
-							<span class="pill tertiary">Agile Methodologies</span>
-							<span class="pill tertiary">WCAG 2.0, 2.1</span>
-							<span class="pill tertiary">AJAX</span>
-							<span class="pill tertiary">Mongo DB</span>
-							<span class="pill tertiary">JSON, XML</span>
-							<span class="pill tertiary">HighCharts</span>
-							<span class="pill tertiary">VueJS</span>
-							<span class="pill tertiary">Graph QL</span>
-							<span class="pill tertiary">REST API</span>
-							<span class="pill tertiary">D3 JS</span>
-							<span class="pill tertiary">Storybook</span>
-							<span class="pill tertiary">Mongoose ODM</span>
-							<span class="pill tertiary">Analytics (Omniture)</span>
-							<span class="pill tertiary">Jira</span>
-							<span class="pill tertiary">Can JS</span>
-							<span class="pill tertiary">Jest/Enzyme</span>
-							<span class="pill tertiary">AWS</span>
-							<span class="pill tertiary">Jasmine/Karma</span>
-							<span class="pill tertiary">Handlebars/Mustache/EJS</span>
-							<span class="pill tertiary">AEM</span>
-							<span class="pill tertiary">Git/SVN/CVS/Perforce</span>
+				<div class="about-grid">
+					<div class="about-text fade-in">
+						<p>
+							Strategic Technical Architect with <strong>21+ years of experience</strong> leading UI engineering at
+							scale for global enterprises — including Adobe Inc. ($6B e-commerce platform), Envestnet Yodlee (FinTech),
+							and TCS.
+						</p>
+						<p>
+							Deep specialization in React ecosystem architecture, design systems, and performance engineering.
+							Recognized for driving measurable business impact — delivering $1.8M/year in cost savings, improving
+							customer satisfaction by 30%, and reducing page load times by 3.5 seconds.
+						</p>
+						<p>
+							Champion of AI-assisted development tools (Cursor AI, Windsurf AI, Claude), actively mentoring teams and
+							shaping enterprise-wide adoption strategies. Award-winning leader known for bridging client needs with
+							engineering excellence.
+						</p>
+					</div>
+					<div class="about-highlights fade-in">
+						<div class="highlight-card">
+							<div class="highlight-icon blue">🏗️</div>
+							<div class="highlight-body">
+								<h4>UI Architecture & Design Systems</h4>
+								<p>
+									Built org-wide design systems and widget libraries adopted across multiple product lines at Yodlee and
+									Envestnet.
+								</p>
+							</div>
 						</div>
-					</details>
-					<details open>
-						<summary>
-							<i class="fa-solid fa-circle-info"></i>
-							Profiles
-						</summary>
-						<ul class="fa-ul info-list">
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-link"></i></span><a href="https://vinothk1447.github.io/profile/" target="_blank">Personal profile</a>
-							</li>
-							<li class="project-details">
-								<span class="fa-li"><i class="fa-solid fa-diagram-project"></i></span><a href="./projects.html" target="_blank">Project Details</a>
-							</li>
-						</ul>
-					</details>
-					<details open>
-						<summary>
-							<i class="fa-solid fa-user-graduate"></i>
-							Academics
-						</summary>
-						<ul class="fa-ul awards-list">
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>MCA - RVS College of Engineering and
-								Technology, Dindigul. Madurai Kamaraj
-								University [2001- 2004]
-							</li>
-							<li>
-								<span class="fa-li"><i class="fa-solid fa-graduation-cap"></i></span>B.Sc [CS] - PSG College of Arts and
-								Science, Coimbatore. Autonomous and
-								affiliated to Bharathiar University [1998 -
-								2001]
-							</li>
-						</ul>
-					</details>
+						<div class="highlight-card">
+							<div class="highlight-icon green">⚡</div>
+							<div class="highlight-body">
+								<h4>Performance Engineering</h4>
+								<p>
+									Reduced page load by 3.5s on graphics-intensive dashboards; cut system downtime by 15% via rigorous
+									code reviews.
+								</p>
+							</div>
+						</div>
+						<div class="highlight-card">
+							<div class="highlight-icon purple">🤖</div>
+							<div class="highlight-body">
+								<h4>AI-Assisted Development Champion</h4>
+								<p>
+									Pioneered Cursor AI adoption, mentored teams on AI workflows, and served on enterprise licensing
+									evaluation committees.
+								</p>
+							</div>
+						</div>
+						<div class="highlight-card">
+							<div class="highlight-icon orange">🎯</div>
+							<div class="highlight-body">
+								<h4>Technical Leadership & Mentoring</h4>
+								<p>
+									Boosted team productivity by 20% through mentoring and knowledge-sharing. Zero missed deadlines across
+									all led projects.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-</body>
+		</section>
 
+		<!-- ── SKILLS ── -->
+		<section id="skills">
+			<div class="container">
+				<div class="fade-in">
+					<div class="section-label">Technical skills</div>
+					<div class="divider"></div>
+					<h2 class="section-title">Full-stack frontend expertise</h2>
+					<p class="section-desc">
+						Two decades of hands-on experience across the modern web stack — from architecture to delivery.
+					</p>
+				</div>
+				<div class="skills-grid fade-in">
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(66, 153, 225, 0.15)">🤖</div>
+							<span class="skill-cat-name">AI Dev Tools</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Cursor AI</span>
+							<span class="skill-tag">Windsurf AI</span>
+							<span class="skill-tag">Claude Code</span>
+							<span class="skill-tag">VSCode</span>
+							<span class="skill-tag">MCP</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(104, 211, 145, 0.15)">⚛️</div>
+							<span class="skill-cat-name">Core Frameworks</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">React JS</span>
+							<span class="skill-tag">React Native</span>
+							<span class="skill-tag">Node.js</span>
+							<span class="skill-tag">Express</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(246, 173, 85, 0.15)">📝</div>
+							<span class="skill-cat-name">Languages</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">JavaScript ES6+</span>
+							<span class="skill-tag">TypeScript</span>
+							<span class="skill-tag">HTML5</span>
+							<span class="skill-tag">CSS3</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(159, 122, 234, 0.15)">🔧</div>
+							<span class="skill-cat-name">Build & Tooling</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Webpack</span>
+							<span class="skill-tag">Vite</span>
+							<span class="skill-tag">Storybook</span>
+							<span class="skill-tag">NPM/Yarn</span>
+							<span class="skill-tag">Git</span>
+							<span class="skill-tag">CI/CD</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(66, 153, 225, 0.15)">🎨</div>
+							<span class="skill-cat-name">Styling</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">SCSS/LESS</span>
+							<span class="skill-tag">CSS-in-JS</span>
+							<span class="skill-tag">Responsive Design</span>
+							<span class="skill-tag">WCAG 2.0/2.1</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(104, 211, 145, 0.15)">🗃️</div>
+							<span class="skill-cat-name">State Management</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Redux</span>
+							<span class="skill-tag">Redux Toolkit</span>
+							<span class="skill-tag">Context API</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(246, 173, 85, 0.15)">📊</div>
+							<span class="skill-cat-name">Data Visualization</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">D3.js</span>
+							<span class="skill-tag">Highcharts</span>
+							<span class="skill-tag">Apache Superset</span>
+							<span class="skill-tag">React Charts</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(159, 122, 234, 0.15)">🔌</div>
+							<span class="skill-cat-name">API & Backend</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">REST API</span>
+							<span class="skill-tag">GraphQL</span>
+							<span class="skill-tag">AJAX</span>
+							<span class="skill-tag">JSON/XML</span>
+							<span class="skill-tag">MongoDB</span>
+							<span class="skill-tag">ClickhouseDB</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(66, 153, 225, 0.15)">🧪</div>
+							<span class="skill-cat-name">Testing</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Jest</span>
+							<span class="skill-tag">React Testing Library</span>
+							<span class="skill-tag">Enzyme</span>
+							<span class="skill-tag">Jasmine</span>
+							<span class="skill-tag">Karma</span>
+						</div>
+					</div>
+					<div class="skill-category">
+						<div class="skill-cat-header">
+							<div class="skill-cat-icon" style="background: rgba(104, 211, 145, 0.15)">☁️</div>
+							<span class="skill-cat-name">Cloud & Analytics</span>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">AWS</span>
+							<span class="skill-tag">Adobe AEM</span>
+							<span class="skill-tag">Adobe Analytics</span>
+							<span class="skill-tag">Heap Analytics</span>
+							<span class="skill-tag">New Relic</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ── EXPERIENCE ── -->
+		<section id="experience">
+			<div class="container">
+				<div class="fade-in">
+					<div class="section-label">Career journey</div>
+					<div class="divider"></div>
+					<h2 class="section-title">21+ years of impact</h2>
+					<p class="section-desc">
+						From software engineer to technical architect at global enterprises — a journey defined by delivery,
+						leadership, and innovation.
+					</p>
+				</div>
+
+				<div class="timeline">
+					<div class="timeline-item fade-in">
+						<div class="timeline-dot">
+							<div class="timeline-circle">🏗️</div>
+						</div>
+						<div class="timeline-body">
+							<div class="exp-header">
+								<span class="exp-role">Technical Architect</span>
+								<span class="exp-period">Nov 2022 – Present</span>
+							</div>
+							<div class="exp-company">Tata Consultancy Services</div>
+							<div class="exp-client">Client: Envestnet Inc. | Fintech Wealth Management Platform</div>
+							<ul class="exp-bullets">
+								<li>
+									Built a custom web tracking tool replacing Heap Analytics, delivering
+									<strong>~$1.8M/year in cost savings</strong> for the client.
+								</li>
+								<li>
+									Improved customer satisfaction by <strong>+30%</strong> through effective client collaboration on
+									high-stakes projects.
+								</li>
+								<li>
+									Enhanced user engagement by <strong>+25%</strong> via responsive design and UX best practices across
+									web applications.
+								</li>
+								<li>
+									Reduced system downtime by <strong>15%</strong> through rigorous code reviews and eliminating security
+									vulnerabilities.
+								</li>
+								<li>
+									Boosted team productivity by <strong>20%</strong> by mentoring engineers and establishing a
+									knowledge-sharing culture.
+								</li>
+								<li>
+									Championed Cursor AI adoption — mentored developers and served on the enterprise licensing evaluation
+									committee.
+								</li>
+								<li>
+									Designed and delivered a fully configurable, reusable widget library adopted org-wide, accelerating
+									delivery across multiple projects.
+								</li>
+								<li>
+									Optimized a graphics-intensive dashboard, reducing page load time by <strong>~3.5 seconds</strong>.
+								</li>
+								<li>
+									Architected and led delivery of PFM Configuration Management Tool, SMB Portal, and Wealth Data
+									Platform — all on schedule.
+								</li>
+							</ul>
+							<div class="exp-tags">
+								<span class="exp-tag">React</span>
+								<span class="exp-tag">TypeScript</span>
+								<span class="exp-tag">D3.js</span>
+								<span class="exp-tag">Redux</span>
+								<span class="exp-tag">Cursor AI</span>
+								<span class="exp-tag">ClickhouseDB</span>
+								<span class="exp-tag">Node.js</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="timeline-item fade-in">
+						<div class="timeline-dot">
+							<div class="timeline-circle">💡</div>
+						</div>
+						<div class="timeline-body">
+							<div class="exp-header">
+								<span class="exp-role">Principal Engineer</span>
+								<span class="exp-period">Jun 2020 – Nov 2022</span>
+							</div>
+							<div class="exp-company">Envestnet Yodlee</div>
+							<div class="exp-client">FinTech | Open Banking & Personal Finance Management</div>
+							<ul class="exp-bullets">
+								<li>
+									Designed and delivered the <strong>Yodlee Design System</strong> — an org-wide UI library of CSS
+									standards and custom React components, published on Nexus and adopted across all major product lines.
+								</li>
+								<li>
+									Led end-to-end frontend delivery of <strong>FastLink4 Configuration Management Tool</strong> — a live
+									multi-viewport preview tool for financial app configuration.
+								</li>
+								<li>
+									Increased system uptime by <strong>20%</strong> through proactive issue detection using New Relic and
+									Heap.
+								</li>
+								<li>
+									Drove org-wide adoption of <strong>TypeScript</strong> across all frontend projects, reducing runtime
+									defects.
+								</li>
+								<li>
+									Led a frontend team delivering multiple projects on time with <strong>zero missed deadlines</strong>.
+								</li>
+								<li>
+									Received the <strong>Dream Team Award</strong> for collaborative excellence, innovation, and product
+									delivery leadership.
+								</li>
+							</ul>
+							<div class="exp-tags">
+								<span class="exp-tag">React</span>
+								<span class="exp-tag">Redux</span>
+								<span class="exp-tag">TypeScript</span>
+								<span class="exp-tag">SCSS</span>
+								<span class="exp-tag">Jest</span>
+								<span class="exp-tag">Enzyme</span>
+								<span class="exp-tag">Storybook</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="timeline-item fade-in">
+						<div class="timeline-dot">
+							<div class="timeline-circle">🎨</div>
+						</div>
+						<div class="timeline-body">
+							<div class="exp-header">
+								<span class="exp-role">Senior Frontend Engineer</span>
+								<span class="exp-period">Oct 2011 – May 2020</span>
+							</div>
+							<div class="exp-company">Adobe Inc.</div>
+							<div class="exp-client">Adobe.com E-Commerce | Adobe Exchange | Web Support Portal</div>
+							<ul class="exp-bullets">
+								<li>
+									Led frontend architecture for <strong>Adobe.com E-Commerce ($6B+ platform)</strong> — purchase flows,
+									post-subscription handling, and third-party analytics (Omniture).
+								</li>
+								<li>
+									Architected <strong>Adobe Exchange</strong> (exchange.adobe.com) — a full-stack marketplace for Adobe
+									product add-ons used by millions worldwide; led a 4-member team from design to launch.
+								</li>
+								<li>
+									Single-handedly designed and delivered the internal <strong>Web Support Portal</strong> for Adobe
+									senior executives — JIRA-integrated, tracking issues across Adobe.com, Creative Cloud, and more.
+								</li>
+								<li>
+									Developed reusable, framework-agnostic UI component libraries, increasing team development efficiency
+									by <strong>30%</strong>.
+								</li>
+								<li>
+									Received the <strong>Appreciation Award, multiple Bravo Awards</strong>, and was
+									<strong>Hackathon runner-up</strong> at Adobe Inc.
+								</li>
+							</ul>
+							<div class="exp-tags">
+								<span class="exp-tag">React</span>
+								<span class="exp-tag">Can JS</span>
+								<span class="exp-tag">Adobe AEM</span>
+								<span class="exp-tag">Omniture</span>
+								<span class="exp-tag">JavaScript</span>
+								<span class="exp-tag">jQuery</span>
+								<span class="exp-tag">SCSS</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="timeline-item fade-in">
+						<div class="timeline-dot">
+							<div class="timeline-circle">🚀</div>
+						</div>
+						<div class="timeline-body">
+							<div class="exp-header">
+								<span class="exp-role">Technical Lead</span>
+								<span class="exp-period">Apr 2010 – Oct 2011</span>
+							</div>
+							<div class="exp-company">Symphony Services</div>
+							<div class="exp-client">Client: Jobvite, USA | Social Recruiting Platform</div>
+							<ul class="exp-bullets">
+								<li>
+									Led the frontend team delivering Jobvite's Hire &amp; Sourcing platform — enabling talent acquisition
+									via LinkedIn, Twitter, and Facebook.
+								</li>
+								<li>
+									Delivered job campaign management, full candidate lifecycle workflows, SSO integration, and
+									autocomplete/type-ahead features.
+								</li>
+							</ul>
+							<div class="exp-tags">
+								<span class="exp-tag">JavaScript</span>
+								<span class="exp-tag">jQuery</span>
+								<span class="exp-tag">SSO</span>
+								<span class="exp-tag">REST API</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="earlier-career fade-in">
+						<h3>Earlier Career</h3>
+						<div class="earlier-item">
+							<div class="earlier-role">Consultant — Sonata Software Ltd.</div>
+							<div class="earlier-company">
+								Client: TUI, UK &nbsp;|&nbsp; PCI DSS & OWASP-compliant payment server for Thomson/First Choice travel
+								sites
+							</div>
+							<div class="earlier-period">Jan 2008 – Mar 2010</div>
+						</div>
+						<div style="height: 1px; background: var(--border); margin: 0.75rem 0"></div>
+						<div class="earlier-item">
+							<div class="earlier-role">Senior Software Engineer — IBM India Pvt. Ltd.</div>
+							<div class="earlier-company">
+								Client: American Express, USA &nbsp;|&nbsp; Project Renaissance travel portal &nbsp;·&nbsp; Bravo Award
+								&amp; Project Excellence Award
+							</div>
+							<div class="earlier-period">Sep 2006 – Dec 2007</div>
+						</div>
+						<div style="height: 1px; background: var(--border); margin: 0.75rem 0"></div>
+						<div class="earlier-item">
+							<div class="earlier-role">Analyst Programmer — Syntel Limited, Mumbai</div>
+							<div class="earlier-period">Feb 2006 – Sep 2006</div>
+						</div>
+						<div style="height: 1px; background: var(--border); margin: 0.75rem 0"></div>
+						<div class="earlier-item">
+							<div class="earlier-role">Software Engineer — Savant Technologies Pvt. Ltd., Chennai</div>
+							<div class="earlier-period">Jun 2004 – Feb 2006</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ── AWARDS ── -->
+		<section id="awards">
+			<div class="container">
+				<div class="fade-in">
+					<div class="section-label">Recognition</div>
+					<div class="divider"></div>
+					<h2 class="section-title">Awards & honours</h2>
+					<p class="section-desc">
+						Recognized across multiple organizations for technical excellence, innovation, and collaborative leadership.
+					</p>
+				</div>
+				<div class="awards-grid fade-in">
+					<div class="award-card">
+						<div class="award-trophy">🏆</div>
+						<div>
+							<div class="award-title">Dream Team Award</div>
+							<div class="award-company">
+								Envestnet Yodlee — Collaborative excellence &amp; product delivery leadership
+							</div>
+						</div>
+					</div>
+					<div class="award-card">
+						<div class="award-trophy">🥇</div>
+						<div>
+							<div class="award-title">Appreciation Award — Technical Expertise</div>
+							<div class="award-company">Adobe Inc.</div>
+						</div>
+					</div>
+					<div class="award-card">
+						<div class="award-trophy">⭐</div>
+						<div>
+							<div class="award-title">Multiple Bravo Awards</div>
+							<div class="award-company">Adobe Inc. — Technical excellence &amp; innovation</div>
+						</div>
+					</div>
+					<div class="award-card">
+						<div class="award-trophy">🏅</div>
+						<div>
+							<div class="award-title">Project Excellence Award</div>
+							<div class="award-company">American Express Bank — Project Renaissance delivery</div>
+						</div>
+					</div>
+					<div class="award-card">
+						<div class="award-trophy">🎖️</div>
+						<div>
+							<div class="award-title">Bravo Award</div>
+							<div class="award-company">IBM India Pvt. Ltd.</div>
+						</div>
+					</div>
+					<div class="award-card">
+						<div class="award-trophy">🚀</div>
+						<div>
+							<div class="award-title">Hackathon Runner-Up</div>
+							<div class="award-company">Adobe Inc.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ── EDUCATION ── -->
+		<section id="education">
+			<div class="container">
+				<div class="fade-in">
+					<div class="section-label">Education</div>
+					<div class="divider"></div>
+					<h2 class="section-title">Academic foundation</h2>
+				</div>
+				<div class="edu-grid fade-in">
+					<div class="edu-card">
+						<div class="edu-degree">Master of Computer Applications (MCA)</div>
+						<div class="edu-school">RVS College of Engineering &amp; Technology, Dindigul</div>
+						<div class="edu-uni">Madurai Kamaraj University</div>
+						<div class="edu-period">2001 – 2004</div>
+					</div>
+					<div class="edu-card">
+						<div class="edu-degree">B.Sc. Computer Science</div>
+						<div class="edu-school">PSG College of Arts &amp; Science, Coimbatore</div>
+						<div class="edu-uni">Bharathiar University</div>
+						<div class="edu-period">1998 – 2001</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ── CONTACT ── -->
+		<section id="contact">
+			<div class="container">
+				<div class="contact-wrapper fade-in">
+					<div class="contact-text">
+						<h2>Let's work together</h2>
+						<p>
+							Open to senior leadership and architecture roles in product engineering.<br />Reach out — I'd love to
+							connect.
+						</p>
+					</div>
+					<div class="contact-links">
+						<a href="mailto:vinothkarur@gmail.com" class="contact-link">
+							<div class="contact-link-icon">✉️</div>
+							<span>vinothkarur@gmail.com</span>
+						</a>
+						<a href="tel:+919740933111" class="contact-link">
+							<div class="contact-link-icon">📞</div>
+							<span>+91 97409 33111</span>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/vinoth-kumar-krishnamoorthy/"
+							target="_blank"
+							rel="noopener"
+							class="contact-link"
+						>
+							<div class="contact-link-icon">💼</div>
+							<span>LinkedIn Profile</span>
+						</a>
+						<a href="https://github.com/VinothK1447/" target="_blank" rel="noopener" class="contact-link">
+							<div class="contact-link-icon">🐙</div>
+							<span>GitHub</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ── FOOTER ── -->
+		<footer>
+			<p>© 2025 Vinothkumar Krishnamoorthy &nbsp;·&nbsp; Bengaluru, India &nbsp;·&nbsp; Built with care</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
 </html>
